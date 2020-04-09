@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    package="com.ajeetMishra.flashchatnewfirebase"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:testOnly="false"
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+
+        <activity
+            android:name="com.ajeetMishra.flashchatnewfirebase.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.ajeetMishra.flashchatnewfirebase.RegisterActivity"
+            android:screenOrientation="fullSensor">
+        </activity>
+
+        <activity
+            android:name="com.ajeetMishra.flashchatnewfirebase.MainChatActivity"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+
+    </application>
+
+</manifest>
